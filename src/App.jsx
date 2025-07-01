@@ -13,6 +13,16 @@ function App() {
 
         <div className="row mt-5">
             <Guitar/>
+            <Guitar/>
+            <Guitar/>
+            <Guitar/>
+            <Guitar/>
+            <Guitar/>
+            <Guitar/>
+            <Guitar/>
+            <Guitar/>
+            <Guitar/>
+            <Guitar/>
             
         </div>
     </main>
