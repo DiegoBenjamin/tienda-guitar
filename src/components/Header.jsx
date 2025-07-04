@@ -43,7 +43,7 @@ return (
                                 <tr key={guitar.id}>
                                     <td>
                                         <img className="img-fluid" 
-                                        src={`./public/img/${guitar.image}.jpg`} 
+                                        src={`img/${guitar.image}.jpg`} 
                                         alt="imagen guitarra" />
                                     </td>
                                     <td>{guitar.name}</td>
