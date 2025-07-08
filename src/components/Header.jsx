@@ -2,7 +2,7 @@ import Logo from '../img/logo.svg'
 import Carrito from '../img/carrito.png'
 import {useMemo } from 'react'
 
-export default function Header({cart}) {
+export default function Header({cart,removeFromCar,increaseQuantity}) {
 
 //State Derivado 
 const isEmpty = useMemo( () => cart.length ===0, [cart])
@@ -61,6 +61,7 @@ return (
                                         <button
                                             type="button"
                                             className="btn btn-dark"
+                                            onClick={() => increaseQuantity(guitar.id)}
                                         >
                                             +
                                         </button>
@@ -69,6 +70,7 @@ return (
                                         <button
                                             className="btn btn-danger"
                                             type="button"
+                                            onClick={() => removeFromCar(guitar.id)}
                                         >
                                             X
                                         </button>
