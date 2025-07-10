@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import Guitar from "./components/Guitar"
 import Header from "./components/Header"
+import NavBar from "./components/NavBar"
 import Footer from "./components/Footer"
 import { db } from  "./data/db" 
 
@@ -83,6 +84,8 @@ function clearCart(){
 
   return (
     <>
+    <NavBar/>
+
     <Header
       cart={cart}
       removeFromCar={removeFromCar}
@@ -90,6 +93,7 @@ function clearCart(){
       decreaseQuantity={decreaseQuantity}
       clearCart={clearCart}
     />
+
     
 
     <main className="container-xl mt-5">
